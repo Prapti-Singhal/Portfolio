@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Avinya – Web Platform</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at 70% 20%, #021c2c, #000814);
+            color: #d9e8ff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-family: 'Orbitron';
+            font-size: 3rem;
+            color: #5fd3ff;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .art-card {
+            background: rgba(0, 20, 40, 0.6);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 255, 200, 0.2);
+            box-shadow: 0 0 20px rgba(0, 255, 200, 0.1);
+            transition: 0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+        .art-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 25px rgba(0, 255, 200, 0.3);
+        }
+
+        .art-card img {
+            width: 100%;
+            height: 250px;
+            /* fixed height = clean grid */
+            object-fit: contain;
+        }
+
+        .art-content {
+            padding: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .art-content h3 {
+            margin: 5px 0;
+            color: #5fd3ff;
+        }
+
+        .thought {
+            font-size: 0.9rem;
+            color: #c7d8ff;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: none;
+            color: #5fd3ff;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            color: #5fd3ff;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Avinya – Web Platform</h1>
+
+        <div class="project-info">
+            <p>
+                Avinya is a dynamic web platform built using PHP and MySQL that enables users to manage events and
+                content efficiently.
+                It supports multiple users, allowing seamless interaction between frontend and backend systems.
+                The platform focuses on usability, structured data handling, and smooth user experience.
+            </p>
+
+            <p><strong>Tech Used:</strong> PHP, MySQL, HTML, CSS</p>
+        </div>
+
+        <a href="../projects.html">← Back</a>
+
+        <h2 class="section-title">Project Screenshots</h2>
+
+        <div class="gallery">
+
+            <div class="art-card">
+                <img src="../assets/avinya/1.png">
+                <div class="art-content">
+                    <h3>Multi-Solution Hub – Central Dashboard Interface</h3>
+                    <p class="thought">
+                        Unified homepage showcasing multiple applications including book recommendations, playlist
+                        management, event planning, and maze solving.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/avinya/14.png">
+                <div class="art-content">
+                    <h3>Platform Overview – Feature Highlights & Introduction</h3>
+                    <p class="thought">
+                        Descriptive landing section explaining all system modules and their functionalities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/avinya/2.png">
+                <div class="art-content">
+                    <h3>Reading Level Selection – Personalized Entry Point</h3>
+                    <p class="thought">
+                        User selects experience level to tailor book recommendations based on reading proficiency.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/avinya/3.png">
+                <div class="art-content">
+                    <h3>Genre Selection Interface – Preference Filtering System</h3>
+                    <p class="thought">
+                        Interactive genre selection to refine recommendations based on user interests.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/avinya/4.png">
+                <div class="art-content">
+                    <h3>Book Recommendations – Dynamic Result Display (Fantasy Category)</h3>
+                    <p class="thought">
+                        Curated list of recommended books generated based on user-selected preferences.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/avinya/5.png">
+                <div class="art-content">
+                    <h3>Book Recommendations – Dynamic Result Display (Fiction Category)</h3>
+                    <p class="thought">
+                        Expanded recommendation list showcasing adaptive content filtering across genres.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/avinya/6.png">
+                <div class="art-content">
+                    <h3>Music Genre Selection – Playlist Personalization Module</h3>
+                    <p class="thought">
+                        Allows users to choose preferred music genres for customized playlist generation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/avinya/7.png">
+                <div class="art-content">
+                    <h3>Recommended Songs – Curated Playlist Output</h3>
+                    <p class="thought">
+                        Displays dynamically generated song recommendations based on selected genre.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/avinya/8.png">
+                <div class="art-content">
+                    <h3>Maze Solver Interface – Pathfinding Visualization System</h3>
+                    <p class="thought">
+                        Grid-based interactive maze demonstrating algorithmic pathfinding (BFS/DFS).
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/avinya/9.png">
+                <div class="art-content">
+                    <h3>Event Listing – Available Events Dashboard</h3>
+                    <p class="thought">
+                        Displays event details including venue, duration, pricing, and capacity.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/avinya/10.png">
+                <div class="art-content">
+                    <h3>Event Booking Form – User Input & Reservation Module</h3>
+                    <p class="thought">
+                        Structured form for booking events with user details and payment input.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/avinya/11.png">
+                <div class="art-content">
+                    <h3>Contact Page – User Support & Communication Interface</h3>
+                    <p class="thought">
+                        Dedicated section for user queries, feedback, and platform interaction.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/avinya/12.png">
+                <div class="art-content">
+                    <h3>Authentication System – Login & Registration Interface</h3>
+                    <p class="thought">
+                        Secure user authentication with login and sign-up functionality.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/avinya/13.png">
+                <div class="art-content">
+                    <h3>AI Chatbot – Under Development Interface</h3>
+                    <p class="thought">
+                        Placeholder UI indicating upcoming chatbot integration feature.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

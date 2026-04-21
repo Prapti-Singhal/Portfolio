@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Decentralized Skill Passport</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at 70% 20%, #021c2c, #000814);
+            color: #d9e8ff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-family: 'Orbitron';
+            font-size: 3rem;
+            color: #5fd3ff;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .art-card {
+            background: rgba(0, 20, 40, 0.6);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 255, 200, 0.2);
+            box-shadow: 0 0 20px rgba(0, 255, 200, 0.1);
+            transition: 0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+        .art-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 25px rgba(0, 255, 200, 0.3);
+        }
+
+        .art-card img {
+            width: 100%;
+            height: 250px;
+            /* fixed height = clean grid */
+            object-fit: contain;
+        }
+
+        .art-content {
+            padding: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .art-content h3 {
+            margin: 5px 0;
+            color: #5fd3ff;
+        }
+
+        .thought {
+            font-size: 0.9rem;
+            color: #c7d8ff;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: none;
+            color: #5fd3ff;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            color: #5fd3ff;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Decentralized Skill Passport</h1>
+
+        <div class="project-info">
+            <p>
+                A blockchain-based application that stores and verifies user skills as NFTs.
+                This system ensures tamper-proof validation of achievements and allows users
+                to securely showcase their skills. Integrated with MetaMask, it enables users
+                to mint and manage their skill records on the blockchain.
+            </p>
+
+            <p><strong>Tech Used:</strong> Blockchain, Smart Contracts, MetaMask, Web3</p>
+        </div>
+
+        <a href="../projects.html">← Back</a>
+
+        <h2 class="section-title">Project Screenshots</h2>
+
+        <div class="gallery">
+
+            <div class="art-card">
+                <img src="../assets/Blockchain/1.png">
+                <div class="art-content">
+                    <h3>Local Blockchain Environment Setup</h3>
+                    <p class="thought">
+                        Displays multiple test accounts generated using Hardhat, each preloaded with test ETH. These
+                        accounts are used for deploying and interacting with smart contracts in a local development
+                        environment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/Blockchain/2.png">
+                <div class="art-content">
+                    <h3>Wallet Integration with MetaMask</h3>
+                    <p class="thought">
+                        Shows successful connection to MetaMask using a local Hardhat network, enabling interaction with
+                        the blockchain and testing transactions with preloaded ETH.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/Blockchain/3.png">
+                <div class=" art-content">
+                    <h3>User Interface – SkillChain Platform</h3>
+                    <p class="thought">
+                        The main interface of the application where users can connect their wallet, explore features,
+                        and interact with the decentralized skill management system.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/Blockchain/4.png">
+                <div class="art-content">
+                    <h3>Skill Input & NFT Minting Interface</h3>
+                    <p class="thought">
+                        Allows users to enter a skill and initiate the minting process, converting the skill into a
+                        verifiable NFT stored on the blockchain.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/Blockchain/5.png">
+                <div class="art-content">
+                    <h3>Transaction Authorization via MetaMask</h3>
+                    <p class="thought">
+                        Displays the MetaMask confirmation window where users approve blockchain transactions required
+                        for minting skill NFTs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/Blockchain/6.png">
+                <div class="art-content">
+                    <h3>Successful NFT Minting</h3>
+                    <p class="thought">
+                        Confirms that the skill has been successfully minted as an NFT and stored on the blockchain.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/Blockchain/7.png">
+                <div class="art-content">
+                    <h3>On-Chain Skill Storage & Display</h3>
+                    <p class="thought">
+                        Shows the list of user skills retrieved from the blockchain, demonstrating successful storage
+                        and retrieval of NFT-based credentials.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/Blockchain/8.png">
+                <div class="art-content">
+                    <h3>Smart Contract Interaction & Debugging</h3>
+                    <p class="thought">
+                        Displays backend logs of blockchain interactions, including contract calls, transaction
+                        processing, and debugging during development.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

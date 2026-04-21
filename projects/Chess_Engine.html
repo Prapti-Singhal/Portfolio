@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Engine</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at 70% 20%, #021c2c, #000814);
+            color: #d9e8ff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-family: 'Orbitron';
+            font-size: 3rem;
+            color: #5fd3ff;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .art-card {
+            background: rgba(0, 20, 40, 0.6);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 255, 200, 0.2);
+            box-shadow: 0 0 20px rgba(0, 255, 200, 0.1);
+            transition: 0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+        .art-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 25px rgba(0, 255, 200, 0.3);
+        }
+
+        .art-card img {
+            width: 100%;
+            height: 250px;
+            /* fixed height = clean grid */
+            object-fit: contain;
+        }
+
+        .art-content {
+            padding: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .art-content h3 {
+            margin: 5px 0;
+            color: #5fd3ff;
+        }
+
+        .thought {
+            font-size: 0.9rem;
+            color: #c7d8ff;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: none;
+            color: #5fd3ff;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            color: #5fd3ff;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Shatranj ka Dhisşaşa – Chess Engine</h1>
+
+        <div class="project-info">
+            <p>
+                A custom-built chess engine developed in C++ using the Minimax algorithm with Alpha-Beta pruning.
+                The engine evaluates board positions, generates legal moves, and makes optimal decisions based on
+                search depth and evaluation heuristics.
+            </p>
+
+            <p><strong>Tech Used:</strong> C++, Minimax Algorithm, Alpha-Beta Pruning</p>
+        </div>
+
+        <a href="../projects.html">← Back</a>
+
+        <h2 class="section-title">Project Screenshots</h2>
+
+        <div class="gallery">
+
+            <div class="art-card">
+                <img src="../assets/chess/chess1.png">
+                <div class="art-content">
+                    <h3>Game Initialization Interface</h3>
+                    <p class="thought">
+                        Displays the startup sequence of the chess engine, including player setup, instructions, and
+                        game rules before the match begins.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/chess/chess2.png">
+                <div class="art-content">
+                    <h3>Initial Board Setup</h3>
+                    <p class="thought">
+                        Displays the standard chess board configuration with all pieces in their starting positions,
+                        ready for gameplay. The system allows the player to input moves using standard chess notation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/chess/chess3.png">
+                <div class="art-content">
+                    <h3>AI Decision Making & Move Generation</h3>
+                    <p class="thought">
+                        This screen shows the AI analyzing the board and selecting a move using Minimax with Alpha-Beta
+                        pruning. It evaluates possible outcomes and executes the most optimal move in response to the
+                        player.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="../assets/chess/chess4.png">
+                <div class="art-content">
+                    <h3>User Interaction & System Response</h3>
+                    <p class="thought">
+                        Demonstrates how the engine handles user input commands, including move entries and exit
+                        functionality, ensuring smooth interaction and controlled termination of the game.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
