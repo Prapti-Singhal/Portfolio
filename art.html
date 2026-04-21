@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Art</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at 70% 20%, #021c2c, #000814);
+            color: #d9e8ff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-family: 'Orbitron';
+            font-size: 3rem;
+            color: #5fd3ff;
+            margin-bottom: 20px;
+        }
+
+        /* GRID */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* CARD */
+        .art-card {
+            background: rgba(0, 20, 40, 0.6);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 255, 200, 0.2);
+            box-shadow: 0 0 20px rgba(0, 255, 200, 0.1);
+            transition: 0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+        .art-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 25px rgba(0, 255, 200, 0.3);
+        }
+
+        /* IMAGE FIX */
+        .art-card img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* CONTENT */
+        .art-content {
+            padding: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .art-content h3 {
+            margin: 5px 0;
+            font-size: 1.1rem;
+            color: #5fd3ff;
+        }
+
+        .thought {
+            font-size: 0.9rem;
+            color: #c7d8ff;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        /* BACK BUTTON */
+        a {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: none;
+            color: #5fd3ff;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My Art Space</h1>
+        <a href="index.html">← Back</a>
+        <br><br><br>
+        <div class="gallery">
+
+            <div class="art-card">
+                <img src="assets/art/11.jpeg" alt="Art 11">
+                <div class="art-content">
+                    <h3>A Quiet Corner of Life</h3>
+                    <p class="thought">
+                        This piece captures the beauty of simple, everyday moments.
+                        Surrounded by greenery and warmth, it reflects a peaceful routine and the comfort of a quiet
+                        life.
+                        It shows how happiness can exist in small spaces, gentle light, and slow, mindful living.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/12.jpeg" alt="Art 12">
+                <div class="art-content">
+                    <h3>Golden Evenings</h3>
+                    <p class="thought">
+                        This piece captures the quiet charm of an old street, where time feels slower and every
+                        corner holds a story.
+                        The warm lantern light contrasts with the cool surroundings, creating a sense of nostalgia
+                        and calm.
+                        It reflects the beauty of places that feel lived in — where moments linger even after they
+                        pass.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/23.jpeg" alt="Art 23">
+                <div class="art-content">
+                    <h3>Still Frames</h3>
+                    <p class="thought">
+                        This piece captures a quiet moment of observation, framed through a window.
+                        The textured surroundings and muted tones reflect stillness, memory, and the passage of time.
+                        It represents the feeling of watching the world from a distance — present, yet slightly
+                        detached.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/24.png" alt="Art 24">
+                <div class="art-content">
+                    <h3>Her Voice, Her Strength</h3>
+                    <p class="thought">
+                        This piece represents the strength, resilience, and individuality of women.
+                        Through diverse expressions and unified presence, it highlights the importance of voice,
+                        identity, and empowerment.
+                        It celebrates the idea that every woman’s voice carries power and deserves to be heard.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/25.jpeg" alt="Art 25">
+                <div class="art-content">
+                    <h3>Stolen Innocence</h3>
+                    <p class="thought">
+                        This piece explores the contrast between innocence and hidden darkness.
+                        The child, drawn toward something colorful and seemingly harmless, represents purity and
+                        curiosity, while the shadow figure symbolizes unseen dangers.
+                        It reflects how vulnerability often exists alongside illusion, especially in childhood.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/13.jpeg" alt="Art 13">
+                <div class="art-content">
+                    <h3>Education, Reimagined</h3>
+                    <p class="thought">
+                        This poster explores the concept of holistic development through the lens of Taare Zameen Par.
+                        It highlights how education should go beyond academics to nurture creativity, emotional
+                        intelligence, and individuality.
+                        The design combines visuals and storytelling to communicate the importance of seeing every child
+                        as unique.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/1.jpeg" alt="Art 1">
+                <div class="art-content">
+                    <h3>Shine Anyway</h3>
+                    <p class="thought">
+                        This piece is about finding light in unexpected places.
+                        Even something small can hold its own kind of glow, quietly existing yet impossible to ignore.
+                        It’s a reminder to shine, even when you feel unnoticed.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/2.jpeg" alt="Art 2">
+                <div class="art-content">
+                    <h3>Sketch of Park Jimin</h3>
+                    <p class="thought">
+                        Inspired by Park Jimin, this piece focuses on softness and emotional subtlety.
+                        The covered expression symbolizes the distance between identity and perception.
+                        It’s about the emotions we carry quietly, without needing to explain them.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/3.png" alt="Art 3">
+                <div class="art-content">
+                    <h3>Rise Beyond Doubt</h3>
+                    <p class="thought">
+                        This piece represents the idea of breaking free from limitations and rising above doubt.
+                        The silhouette floating upward symbolizes hope, courage, and the power of belief in oneself.
+                        The warm gradient background reflects a transition — from struggle to strength, from grounded to
+                        limitless.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/4.png" alt="Art 4">
+                <div class="art-content">
+                    <h3>Two Sides of Becoming</h3>
+                    <p class="thought">
+                        This piece explores contrast — between growth and stillness, life and emptiness.
+                        The left side represents warmth, energy, and flourishing life, while the right reflects silence,
+                        isolation, and stillness.
+                        Together, they show how both states coexist, shaping the journey of becoming.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/5.jpeg" alt="Art 5">
+                <div class="art-content">
+                    <h3>Hand in Hand</h3>
+                    <p class="thought">
+                        Under a silent sky, two figures stand — not just together, but connected.
+                        This piece reflects the warmth of companionship and the quiet reassurance of not being alone.
+                        Even in the darkest moments, some bonds remain unshaken.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/6.png" alt="Art 6">
+                <div class="art-content">
+                    <h3>Quiet Discoveries</h3>
+                    <p class="thought">
+                        This piece reflects the beauty of solitude and self-discovery.
+                        The lone figure under a vast night sky symbolizes introspection and the journey of understanding
+                        oneself.
+                        It highlights how some of the most meaningful discoveries are made in moments of quiet and
+                        isolation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/7.png" alt="Art 7">
+                <div class="art-content">
+                    <h3>Darkness, My Light</h3>
+                    <p class="thought">
+                        This piece reflects the idea that strength and clarity often emerge in the darkest moments.
+                        The solitary figure under a vast night sky symbolizes reflection, resilience, and quiet growth.
+                        It expresses how darkness is not something to fear, but a space where we learn to shine.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/8.jpeg" alt="Art 8">
+                <div class="art-content">
+                    <h3>A Quiet Responsibility</h3>
+                    <p class="thought">
+                        Created during the COVID-19 period, this piece reflects awareness, responsibility, and quiet
+                        resilience.
+                        The covered face symbolizes protection, while the closed eyes express calmness, acceptance in
+                        uncertain times and silence for the lives that were lost.
+                        It captures how even in restriction, there was strength, care, and a shared sense of
+                        responsibility.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/9.png" alt="Art 9">
+                <div class="art-content">
+                    <h3>Reflections of a Quiet Dream</h3>
+                    <p class="thought">
+                        This piece captures a moment of stillness and reflection under a vast night sky.
+                        The mirrored landscape symbolizes inner peace and the connection between reality and emotion.
+                        It reflects how quiet moments can feel infinite, like a dream suspended in time.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/10.jpeg" alt="Art 10">
+                <div class="art-content">
+                    <h3>Sketch of Park Jimin</h3>
+                    <p class="thought">
+                        Inspired by Park Jimin, this piece captures quiet confidence and individuality.
+                        The clean lines and minimal shading emphasize presence without excess, reflecting strength in
+                        simplicity.
+                        It explores identity not through expression, but through stillness and form.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/14.png" alt="Art 14">
+                <div class="art-content">
+                    <h3>Stolen Childhoods</h3>
+                    <p class="thought">
+                        This piece raises awareness about the harsh reality of child labour and its impact on childhood
+                        and dignity.
+                        Through powerful imagery and contrast, it highlights how children are forced into
+                        responsibilities they should never have to carry.
+                        It aims to provoke thought and remind us that every child deserves education, safety, and a
+                        chance to simply be a child.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="art-card">
+                <img src="assets/art/15.jpeg" alt="Art 15">
+                <div class="art-content">
+                    <h3>Grace in the Dark</h3>
+                    <p class="thought">
+                        This piece captures the elegance and discipline of movement, even in solitude.
+                        The silhouetted dancer under soft light reflects strength, balance, and quiet dedication.
+                        It symbolizes how art continues to exist and shine, even in still or unseen moments.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/17.jpeg" alt="Art 16">
+                <div class="art-content">
+                    <h3>Half Alive, Half Fading</h3>
+                    <p class="thought">
+                        This piece explores contrast through the same form existing in two different states.
+                        One side represents growth, life, and calmness, while the other reflects emptiness, change, and
+                        intensity.
+                        It shows how transformation is constant, and how both phases are equally part of existence.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/18.png" alt="Art 18">
+                <div class="art-content">
+                    <h3>Silent Company</h3>
+                    <p class="thought">
+                        This piece reflects the quiet comfort of solitude.
+                        The lone tree and small figure resting within it symbolize stillness, reflection, and finding
+                        peace in one’s own presence.
+                        It shows that being alone doesn’t always mean loneliness — sometimes, it means clarity.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/19.jpeg" alt="Art 19">
+                <div class="art-content">
+                    <h3>Sketch of Jeon Jungkook</h3>
+                    <p class="thought">
+                        This sketch captures a moment of quiet presence and subtle emotion.
+                        With minimal details and soft shading, the focus shifts to expression rather than complexity.
+                        It reflects how even in silence, there is depth, identity, and unspoken stories.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/20.jpeg" alt="Art 20">
+                <div class="art-content">
+                    <h3>Little Conversations</h3>
+                    <p class="thought">
+                        This piece captures the beauty of simple connections.
+                        Two small figures sharing a quiet moment symbolize comfort, companionship, and the warmth found
+                        in presence rather than words.
+                        It highlights how even the smallest interactions can hold deep meaning.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/21.jpeg" alt="Art 21">
+                <div class="art-content">
+                    <h3>Sketch of Suga</h3>
+                    <p class="thought">
+                        This sketch focuses on subtle expression and quiet strength.
+                        The masked face draws attention to the eyes, emphasizing emotion through minimal detail.
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/22.jpeg" alt="Art 22">
+                <div class="art-content">
+                    <h3>Unsaid</h3>
+                    <p class="thought">
+                        This abstract piece explores emotion in its raw, unstructured form.
+                        Through layered textures and contrasting tones, it reflects thoughts that exist without clear
+                        meaning or direction.
+                        It represents feelings that are present, yet difficult to express or define.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/26.jpeg" alt="Art 26">
+                <div class="art-content">
+                    <h3>Hope in Silence</h3>
+                    <p class="thought">
+                        This piece represents resilience and quiet hope.
+                        Surrounded by muted tones and stillness, the single flower stands as a symbol of life and
+                        persistence.
+                        It reflects how even in difficult or empty environments, growth and beauty can still exist.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/27.jpeg" alt="Art 27">
+                <div class="art-content">
+                    <h3>Silent Support</h3>
+                    <p class="thought">
+                        This piece represents quiet companionship and emotional support.
+                        The presence beside the figure, though subtle and shadowed, symbolizes strength that doesn’t
+                        need words.
+                        It reflects how support can exist silently — not always seen, but always felt.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/1.jpg" alt="Art 4">
+                <div class="art-content">
+                    <h3>Chakra System Visualization</h3>
+                    <p class="thought">
+                        A clean and visually structured representation of the seven chakras, focusing on balance,
+                        alignment, and holistic well-being. The design uses color coding and minimal layout to simplify
+                        complex spiritual concepts into an intuitive visual form.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/2.jpg" alt="Art 4">
+                <div class="art-content">
+                    <h3>Root Chakra: Foundation of Being</h3>
+                    <p class="thought">
+                        A focused visual exploration of the Root Chakra (Muladhara), representing stability, grounding,
+                        and security. The design uses a dominant red palette and structured layout to reflect strength,
+                        balance, and connection to the physical world.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/3.jpg" alt="Art 4">
+                <div class="art-content">
+                    <h3>Sacral Chakra: Seat of Creativity</h3>
+                    <p class="thought">
+                        A visual representation of the Sacral Chakra (Svadhisthana), symbolizing creativity, emotion,
+                        and flow. The design uses warm orange tones and balanced composition to reflect movement,
+                        passion, and expressive energy.
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/4.jpg" alt="Art 4">
+                <div class="art-content">
+                    <h3>Solar Plexus Chakra: Center of Personal Power</h3>
+                    <p class="thought">
+                        A visual representation of the Solar Plexus Chakra (Manipura), symbolizing confidence,
+                        self-esteem, and inner strength. The use of warm yellow tones and structured composition
+                        reflects personal power and clarity.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/5.jpg" alt="Art 4">
+                <div class="art-content">
+                    <h3>Heart Chakra: Bridge Between Earth and Spirit</h3>
+                    <p class="thought">
+                        A visual representation of the Heart Chakra (Anahata), symbolizing love, compassion, and
+                        emotional balance. The use of calming green tones and symmetrical layout reflects harmony and
+                        the connection between physical and spiritual energies.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/6.jpg" alt="Art 4">
+                <div class="art-content">
+                    <h3>Throat Chakra: Voice of Truth</h3>
+                    <p class="thought">
+                        A visual representation of the Throat Chakra (Vishuddha), symbolizing communication,
+                        self-expression, and truth. The use of cool blue tones and clean layout reflects clarity,
+                        openness, and authentic voice.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/7.jpg" alt="Art 4">
+                <div class="art-content">
+                    <h3>Third Eye Chakra: Seat of Intuition</h3>
+                    <p class="thought">
+                        A visual representation of the Third Eye Chakra (Ajna), symbolizing intuition, clarity, and
+                        inner wisdom. The use of indigo tones and structured composition reflects perception, awareness,
+                        and deeper understanding.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/8.jpg" alt="Art 4">
+                <div class="art-content">
+                    <h3>Crown Chakra: Gateway to Higher Consciousness</h3>
+                    <p class="thought">
+                        A visual representation of the Crown Chakra (Sahasrara), symbolizing spiritual connection,
+                        enlightenment, and higher consciousness. The use of violet tones and soft gradients reflects
+                        transcendence, awareness, and inner peace.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/29.png" alt="Art 4">
+                <div class="art-content">
+                    <h3>Rihaa: Breaking Free</h3>
+                    <p class="thought">
+                        A conceptual poster designed for an inter-college street play, using stark monochrome visuals
+                        and bold typography to convey themes of confinement and liberation. The silhouette behind the
+                        glass symbolizes suppression, while the red text emphasizes urgency and emotional intensity.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/10.png" alt="Art 4">
+                <div class="art-content">
+                    <h3>Crime Scene: Coming Soon</h3>
+                    <p class="thought">
+                        A teaser poster designed with a crime-thriller aesthetic, using bold typography, caution tape
+                        elements, and high-contrast visuals to build suspense and anticipation. The composition
+                        emphasizes mystery and urgency through layered textures and striking color contrast.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/11.png" alt="Art 4">
+                <div class="art-content">
+                    <h3>Drama Club Merchandise Design</h3>
+                    <p class="thought">
+                        A custom T-shirt design created for a theatre-themed concept, combining bold typography and
+                        illustrative elements to reflect the energy of performance and backstage culture. The design
+                        balances front minimal branding with a visually engaging back layout.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/12.png" alt="Art 4">
+                <div class="art-content">
+                    <h3>Rihaa – Theatre Merchandise Design</h3>
+                    <p class="thought">
+                        A theatre-inspired merchandise design that blends strong typography with dramatic visual
+                        storytelling. The monochrome imagery and bold layout reflect themes of performance, intensity,
+                        and emotional expression, while the bilingual vertical text adds cultural depth and uniqueness.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/13.png" alt="Art 4">
+                <div class="art-content">
+                    <h3>Theatre Expression – Merchandise Design</h3>
+                    <p class="thought">
+                        A theatre merchandise design focused on identity and expression, combining minimal front
+                        branding with a bold typographic back design. The repeated text pattern and symbolic mask
+                        element reflect performance, duality, and creative expression.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="art-card">
+                <img src="assets/art/30.png" alt="Art 4">
+                <div class="art-content">
+                    <h3>Superheroes as Modern Mythology</h3>
+                    <p class="thought">
+                        A research-based visual poster exploring superheroes as modern mythological figures in
+                        contemporary culture. The design combines academic content with dynamic visual elements to
+                        analyze how Marvel and DC narratives reflect societal values, ethics, and psychological
+                        dimensions. Through structured sections, contrasting textures, and bold typography, the poster
+                        presents complex ideas in an engaging format, highlighting the evolution of superheroes as
+                        cultural symbols shaping identity, morality, and collective imagination.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/31.jpeg" alt="Art 4">
+                <div class="art-content">
+                    <h3>Resilience in Blue</h3>
+                    <p class="thought">
+                        A calming bookmark design combining soft gradients and handwritten typography to deliver a
+                        gentle message of strength and resilience. Designed to accompany reading moments, the piece
+                        blends simplicity with emotional impact and visual storytelling.
+                    </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="assets/art/32.jpeg" alt="Art 4">
+                <div class="art-content">
+                    <h3>Moonlit Metropolis</h3>
+                    <p class="thought">
+                        A minimalist nightscape illustration capturing a city skyline silhouetted against a glowing full
+                        moon. The high contrast between the dark structures and luminous background creates a calm yet
+                        slightly mysterious atmosphere. Subtle details like scattered stars and a lone bird enhance the
+                        sense of solitude, making the piece a reflection of quiet urban nights and introspective
+                        moments.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="index.html">← Back</a>
+
+    </div>
+
+</body>
+
+</html>
