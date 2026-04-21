@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at 70% 20%, #021c2c, #000814);
+            color: #d9e8ff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-family: 'Orbitron';
+            font-size: 3rem;
+            color: #5fd3ff;
+            margin-bottom: 30px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 25px;
+            row-gap: 0px;
+            align-items: stretch;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(0, 20, 40, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 255, 200, 0.2);
+            box-shadow: 0 0 20px rgba(0, 255, 200, 0.1);
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(0, 255, 200, 0.3);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: #5fd3ff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #c7d8ff;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: none;
+            color: #5fd3ff;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Projects</h1>
+
+        <div class="projects">
+
+            <a href="projects/UHV.html">
+                <div class="card">
+                    <h2>Inclusive Design for Elderly Users</h2>
+                    <p>
+                        Human-centered research project focused on understanding interactions
+                    </p>
+                </div>
+            </a>
+
+            <a href="projects/Smart_door_lock.html">
+                <div class="card">
+                    <h2>Smart Door Lock with Face Recognition</h2>
+                    <p>
+                        Face recognition-based access system using Python, OpenCV, and Raspberry Pi.
+                    </p>
+                </div>
+            </a>
+
+            <a href="projects/Chat_system.html">
+                <div class="card">
+                    <h2>Secure Chat Application (RSA)</h2>
+                    <p>
+                        A secure messaging system built using RSA cryptography to ensure safe communication.
+                    </p>
+                </div>
+            </a>
+
+            <a href="projects/Chess_Engine.html">
+                <div class="card">
+                    <h2>Chess Engine</h2>
+                    <p>
+                        C++ chess engine created using Minimax & Alpha-Beta pruning.
+                    </p>
+                </div>
+            </a>
+
+            <a href="projects/Avinya.html">
+                <div class="card">
+                    <h2>Avinya - Web Platform</h2>
+                    <p>
+                        PHP-MySQL platform with event planning and content management.
+                    </p>
+                </div>
+            </a>
+
+            <a href="projects/AI_Attendance.html">
+                <div class="card">
+                    <h2>AI Attendance & Object Detection</h2>
+                    <p>
+                        Facial recognition-based attendance with object detection.
+                    </p>
+                </div>
+            </a>
+
+            <a href="projects/Bankers_Algo.html">
+                <div class="card">
+                    <h2>Banker’s Algorithm Simulation</h2>
+                    <p>
+                        Deadlock avoidance simulation using Banker’s Algorithm.
+                    </p>
+                </div>
+            </a>
+
+            <a href="projects/VPN.html">
+                <div class="card">
+                    <h2>VPN Detection – Minor Project</h2>
+                    <p>
+                        Network traffic analysis for VPN detection.
+                    </p>
+                </div>
+            </a>
+
+            <a href="projects/Blockchain.html">
+                <div class="card">
+                    <h2>Decentralized Skill Passport</h2>
+                    <p>
+                        Blockchain-based NFT system for storing academic skills.
+                    </p>
+                </div>
+            </a>
+
+            <a href="projects/plate.html">
+                <div class="card">
+                    <h2>License Plate Detection System</h2>
+                    <p>
+                        Computer vision-based system that detects license plates.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+
+
+        <a href="index.html" class="back">← Back</a>
+
+    </div>
+
+</body>
+
+</html>
