@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prapti's Portfolio</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            background: black;
+            color: #d9e8ff;
+        }
+
+        #matrix {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-family: 'Orbitron';
+            font-size: 3.2rem;
+            color: #5fd3ff;
+            text-shadow: 0 0 20px #00e0ff;
+        }
+
+        .sub {
+            font-size: 1.4rem;
+            /* 🔥 bigger */
+            color: #ffffff;
+            /* 🔥 more visible */
+            font-weight: 600;
+            margin-top: 10px;
+            text-shadow: 0 0 10px #00e0ff;
+        }
+
+        .panel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            /* 🔥 more spacing */
+            width: 85%;
+            max-width: 1100px;
+        }
+
+        .card {
+            padding: 30px;
+            border-radius: 18px;
+            background: rgba(0, 20, 40, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 255, 200, 0.3);
+            box-shadow: 0 0 25px rgba(0, 255, 200, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* 👈 spreads content */
+        }
+
+        h2 {
+            font-family: 'Orbitron';
+            color: #5fd3ff;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-size: 1rem;
+            /* 🔥 readable */
+            margin: 10px 0;
+        }
+
+        .focus-block ul {
+            margin-top: 8px;
+            padding-left: 18px;
+        }
+
+        .focus-block li {
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+
+        .actions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 16px;
+            font-size: 1rem;
+            border-radius: 12px;
+            border: 1px solid #00e0ff;
+            background: rgba(0, 0, 0, 0.3);
+            color: #5fd3ff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: rgba(0, 224, 255, 0.15);
+            box-shadow: 0 0 20px #00e0ff;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .panel {
+                height: auto;
+                padding: 20px 0;
+            }
+        }
+
+        .system-status {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .status-title {
+            font-size: 0.9rem;
+            color: #9bdfff;
+            margin-bottom: 10px;
+        }
+
+        .status-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .status-fill {
+            width: 85%;
+            height: 100%;
+            background: linear-gradient(90deg, #00e0ff, #00ff9c);
+            box-shadow: 0 0 10px #00e0ff;
+        }
+
+        .status-text {
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: #c7d8ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="matrix"></canvas>
+
+    <header>
+        <h1>PRAPTI SINGHAL</h1>
+        <p class="sub">Initializing profile...</p>
+    </header>
+
+    <main class="panel">
+        <div class="grid-2">
+
+            <div class="card">
+                <h2>Identity</h2>
+
+                <p><strong>Name:</strong> Prapti Singhal</p>
+                <p><strong>Role:</strong> B.Tech CSE Student</p>
+
+                <div class="focus-block">
+                    <strong>Focus:</strong>
+                    <ul>
+                        <li>Cybersecurity</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Design</li>
+                        <li>BlockChain</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ACCESS -->
+
+            <div class="card">
+                <h2>Access</h2>
+
+                <div class="actions">
+                    <button onclick="location.href='about.html'">About</button>
+                    <button onclick="location.href='projects.html'">Projects</button>
+                    <button onclick="location.href='art.html'">Art</button>
+                    <button onclick="location.href='contact.html'">Contact</button>
+                </div>
+
+                <div class="system-status">
+                    <p class="status-title">System Status</p>
+                    <div class="status-bar">
+                        <div class="status-fill"></div>
+                    </div>
+                    <p class="status-text">All systems operational</p>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+    </main>
+
+    <script>
+        const canvas = document.getElementById("matrix");
+        const ctx = canvas.getContext("2d");
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        resize();
+        window.addEventListener("resize", resize);
+
+        const letters = "01";
+        const fontSize = 14;
+        let columns = canvas.width / fontSize;
+        let drops = Array(Math.floor(columns)).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.07)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#00ff9c";
+            ctx.font = fontSize + "px monospace";
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = letters[Math.floor(Math.random() * letters.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 35);
+    </script>
+
+</body>
+
+</html>
