@@ -3,86 +3,171 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: 'Poppins', sans-serif;
-            background: radial-gradient(circle at 70% 20%, #021c2c, #000814);
+            background:
+                radial-gradient(circle at top right, rgba(0, 180, 255, 0.15), transparent 30%),
+                radial-gradient(circle at bottom left, rgba(0, 255, 200, 0.08), transparent 30%),
+                #000814;
+
             color: #d9e8ff;
+            min-height: 100vh;
         }
 
         .container {
-            max-width: 1100px;
+            width: 90%;
+            max-width: 1150px;
             margin: auto;
-            padding: 50px 20px;
+            padding: 60px 0;
         }
 
         h1 {
-            font-family: 'Orbitron';
-            font-size: 3rem;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
             color: #5fd3ff;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #5fd3ff;
+            margin-top: 60px;
+            margin-bottom: 25px;
+            font-weight: 600;
+            text-shadow: 0 0 12px rgba(95, 211, 255, 0.3);
         }
 
         .projects {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 25px;
-            row-gap: 0px;
-            align-items: stretch;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+        }
+
+        .projects a {
+            text-decoration: none;
+            color: inherit;
         }
 
         .card {
-            padding: 20px;
-            border-radius: 15px;
-            background: rgba(0, 20, 40, 0.6);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(0, 255, 200, 0.2);
-            box-shadow: 0 0 20px rgba(0, 255, 200, 0.1);
-            transition: 0.3s;
+            background: rgba(0, 15, 35, 0.75);
+            border: 1px solid rgba(0, 255, 200, 0.25);
+            border-radius: 18px;
+            padding: 28px;
+            min-height: 210px;
+
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            backdrop-filter: blur(10px);
+
+            transition: all 0.3s ease;
+
+            box-shadow:
+                0 0 15px rgba(0, 255, 200, 0.08),
+                0 0 35px rgba(0, 150, 255, 0.05);
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 25px rgba(0, 255, 200, 0.3);
+            transform: translateY(-6px);
+
+            border-color: rgba(95, 211, 255, 0.6);
+
+            box-shadow:
+                0 0 20px rgba(0, 255, 200, 0.18),
+                0 0 45px rgba(0, 150, 255, 0.15);
         }
 
-        h2 {
-            font-size: 1.2rem;
+        .card h2 {
             color: #5fd3ff;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 0.9rem;
+            font-size: 1.4rem;
             line-height: 1.5;
-            color: #c7d8ff;
+            margin-bottom: 18px;
+            font-weight: 600;
         }
 
-        a {
-            display: inline-block;
-            margin-top: 40px;
-            text-decoration: none;
-            color: #5fd3ff;
+        .card p {
+            color: #d3e4ff;
+            font-size: 1rem;
+            line-height: 1.8;
+            flex-grow: 1;
+        }
+
+        .tags {
+            margin-top: 20px;
+            color: #67e8ff;
+            font-size: 0.92rem;
             font-weight: 500;
         }
 
-        a:hover {
-            color: #ffffff;
+        .back {
+            display: inline-block;
+            margin-top: 60px;
+            text-decoration: none;
+            color: #5fd3ff;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: 0.3s;
         }
 
-        @media (max-width: 768px) {
+        .back:hover {
+            color: white;
+        }
+
+        @media (max-width: 900px) {
+
             .projects {
                 grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .card {
+                min-height: auto;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .container {
+                width: 92%;
+            }
+
+            h1 {
+                font-size: 2.4rem;
+            }
+
+            .section-title {
+                font-size: 1.2rem;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+            .card h2 {
+                font-size: 1.15rem;
+            }
+
+            .card p {
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -94,99 +179,252 @@
 
         <h1>Projects</h1>
 
+        <!-- AI & Computer Vision -->
+
+        <h2 class="section-title">🤖 AI & Computer Vision</h2>
+
+        <div class="projects">
+
+            <a href="projects/Smart_door_lock.html">
+
+                <div class="card">
+
+                    <h2>Smart Door Lock with Face Recognition</h2>
+
+                    <p>
+                        Face recognition-based access system using Python,
+                        OpenCV, and Raspberry Pi.
+                    </p>
+
+                    <span class="tags">
+                        Python • OpenCV • Raspberry Pi
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <a href="projects/AI_Attendance.html">
+
+                <div class="card">
+
+                    <h2>AI Attendance Monitoring System</h2>
+
+                    <p>
+                        Facial recognition-based attendance system
+                        integrated with object detection.
+                    </p>
+
+                    <span class="tags">
+                        Python • OpenCV • AI
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <a href="projects/plate.html">
+
+                <div class="card">
+
+                    <h2>License Plate Detection System</h2>
+
+                    <p>
+                        Computer vision-based system for automatic
+                        license plate detection.
+                    </p>
+
+                    <span class="tags">
+                        Python • OpenCV • Computer Vision
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- Cybersecurity -->
+
+        <h2 class="section-title">🔐 Cybersecurity & Secure Systems</h2>
+
+        <div class="projects">
+
+            <a href="projects/Chat_system.html">
+
+                <div class="card">
+
+                    <h2>Secure Chat Application (RSA)</h2>
+
+                    <p>
+                        Secure messaging system built using RSA cryptography
+                        for protected communication.
+                    </p>
+
+                    <span class="tags">
+                        Python • RSA • Cryptography
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <a href="projects/VPN.html">
+
+                <div class="card">
+
+                    <h2>VPN Detection using Traffic Analysis</h2>
+
+                    <p>
+                        Network traffic analysis project focused on
+                        identifying VPN usage patterns.
+                    </p>
+
+                    <span class="tags">
+                        Cybersecurity • Networking • Analysis
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- Blockchain -->
+
+        <h2 class="section-title">⛓️ Blockchain & Decentralized Applications</h2>
+
+        <div class="projects">
+
+            <a href="projects/Blockchain.html">
+
+                <div class="card">
+
+                    <h2>Decentralized Skill Passport</h2>
+
+                    <p>
+                        Blockchain-based NFT platform for storing
+                        academic achievements and skills.
+                    </p>
+
+                    <span class="tags">
+                        Blockchain • NFT • Web3
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- Web Development -->
+
+        <h2 class="section-title">🌐 Web Development Platforms</h2>
+
+        <div class="projects">
+
+            <a href="projects/Avinya.html">
+
+                <div class="card">
+
+                    <h2>Avinya Event Management Platform</h2>
+
+                    <p>
+                        PHP-MySQL platform with event planning and
+                        content management features.
+                    </p>
+
+                    <span class="tags">
+                        PHP • MySQL • Web Development
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- Algorithms -->
+
+        <h2 class="section-title">💻 Algorithms & Simulations</h2>
+
+        <div class="projects">
+
+            <a href="projects/Chess_Engine.html">
+
+                <div class="card">
+
+                    <h2>Chess Engine using Minimax & Alpha-Beta</h2>
+
+                    <p>
+                        C++ chess engine developed using Minimax
+                        algorithm and Alpha-Beta pruning.
+                    </p>
+
+                    <span class="tags">
+                        C++ • DSA • AI Logic
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <a href="projects/Bankers_Algo.html">
+
+                <div class="card">
+
+                    <h2>Deadlock Avoidance Simulator</h2>
+
+                    <p>
+                        Simulation of Banker’s Algorithm for deadlock
+                        avoidance in operating systems.
+                    </p>
+
+                    <span class="tags">
+                        OS • Algorithms • Simulation
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- Social Impact -->
+
+        <h2 class="section-title">🌍 Human-Centered & Social Impact</h2>
+
         <div class="projects">
 
             <a href="projects/UHV.html">
+
                 <div class="card">
+
                     <h2>Inclusive Design for Elderly Users</h2>
+
                     <p>
-                        Human-centered research project focused on understanding interactions
+                        Human-centered research project focused on
+                        accessibility and elderly interactions.
                     </p>
+
+                    <span class="tags">
+                        Research • Accessibility • UX
+                    </span>
+
                 </div>
+
             </a>
 
-            <a href="projects/Smart_door_lock.html">
-                <div class="card">
-                    <h2>Smart Door Lock with Face Recognition</h2>
-                    <p>
-                        Face recognition-based access system using Python, OpenCV, and Raspberry Pi.
-                    </p>
-                </div>
-            </a>
-
-            <a href="projects/Chat_system.html">
-                <div class="card">
-                    <h2>Secure Chat Application (RSA)</h2>
-                    <p>
-                        A secure messaging system built using RSA cryptography to ensure safe communication.
-                    </p>
-                </div>
-            </a>
-
-            <a href="projects/Chess_Engine.html">
-                <div class="card">
-                    <h2>Chess Engine</h2>
-                    <p>
-                        C++ chess engine created using Minimax & Alpha-Beta pruning.
-                    </p>
-                </div>
-            </a>
-
-            <a href="projects/Avinya.html">
-                <div class="card">
-                    <h2>Avinya - Web Platform</h2>
-                    <p>
-                        PHP-MySQL platform with event planning and content management.
-                    </p>
-                </div>
-            </a>
-
-            <a href="projects/AI_Attendance.html">
-                <div class="card">
-                    <h2>AI Attendance & Object Detection</h2>
-                    <p>
-                        Facial recognition-based attendance with object detection.
-                    </p>
-                </div>
-            </a>
-
-            <a href="projects/Bankers_Algo.html">
-                <div class="card">
-                    <h2>Banker’s Algorithm Simulation</h2>
-                    <p>
-                        Deadlock avoidance simulation using Banker’s Algorithm.
-                    </p>
-                </div>
-            </a>
-
-            <a href="projects/VPN.html">
-                <div class="card">
-                    <h2>VPN Detection – Minor Project</h2>
-                    <p>
-                        Network traffic analysis for VPN detection.
-                    </p>
-                </div>
-            </a>
-
-            <a href="projects/Blockchain.html">
-                <div class="card">
-                    <h2>Decentralized Skill Passport</h2>
-                    <p>
-                        Blockchain-based NFT system for storing academic skills.
-                    </p>
-                </div>
-            </a>
-
-            <a href="projects/plate.html">
-                <div class="card">
-                    <h2>License Plate Detection System</h2>
-                    <p>
-                        Computer vision-based system that detects license plates.
-                    </p>
-                </div>
-            </a>
         </div>
-
 
 
         <a href="index.html" class="back">← Back</a>
